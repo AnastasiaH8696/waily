@@ -1,3 +1,10 @@
 .mood-list {
     margin-left: 20px;
 }
+
+.moods-container{
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px; 
+    grid-template-rows: 170px;
+    grid-column-gap: 20px;
+}

@@ -7,6 +7,9 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./mood-checker.component.css']
 })
 export class MoodCheckerComponent implements OnInit {
+
+  constructor(private _formBuilder: FormBuilder) {}
+
   moods = this._formBuilder.group({
     happy: false,
     sad: false,
@@ -14,8 +17,6 @@ export class MoodCheckerComponent implements OnInit {
     depressed: false,
     angry: false,
   });
-
-  constructor(private _formBuilder: FormBuilder) {}
 
   ngOnInit(): void {
   }
